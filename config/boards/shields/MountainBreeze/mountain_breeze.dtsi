@@ -73,11 +73,11 @@ RC(3,5) RC(3,4) RC(3,3) RC(3,2) RC(3,1) RC(3,0)                 RC(8,0) RC(8,1) 
 		width = <128>;
 		height = <32>;
 		address = <0x3C>;
-		spi-dev = <&spi0>;
+		spi-dev = <&nice_view_spi>;
 		cs-gpios = <&pro_micro 9 GPIO_ACTIVE_LOW>;
 	};
 
-	spi0: spi0 {
+	nice_view_spi: spi0 {
 		compatible = "nordic,nrf-spim";
 		status = "okay";
 		sck-pin = <6>;  // D1 (P0.06)
