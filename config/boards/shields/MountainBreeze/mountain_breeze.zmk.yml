@@ -1,2 +1,12 @@
-include:
-  - ../BreezeMX/breeze_mx.keymap
+file_format: "1"
+id: mountain_breeze
+name: Mountain Breeze
+type: shield
+url: https://afternoonlabs.com/breeze/
+requires:
+  - nice_nano_v2
+features:
+  - keys
+siblings:
+  - mountain_breeze_left
+  - mountain_breeze_right
