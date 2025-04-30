@@ -1,0 +1,12 @@
+if SHIELD_MOUNTAIN_BREEZE_LEFT || SHIELD_MOUNTAIN_BREEZE_RIGHT
+
+config ZMK_KEYBOARD_NAME
+	default "Mountain Breeze"
+
+config ZMK_SPLIT
+	default y
+
+config ZMK_DISPLAY
+	default y
+
+endif 
