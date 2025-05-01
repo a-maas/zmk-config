@@ -22,9 +22,13 @@
     };
 };
 
-&pro_micro_spi {
-    status = "okay";
+nice_view_spi: &spi0 {
+    compatible = "nordic,nrf-spim";
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
-}; 
+    cs-gpios   = <&gpio0 9 GPIO_ACTIVE_HIGH>;      /* CS – P0.09 / D10 */
+};
+
+/* disable on-board I²C so it doesn’t steal our pins (optional)    */
+&i2c0 { status = "disabled"; };
