@@ -68,12 +68,11 @@ RC(3,5) RC(3,4) RC(3,3) RC(3,2) RC(3,1) RC(3,0)                 RC(8,0) RC(8,1) 
 	};
 
 	// Configuration for Nice!View display
-	nice_view_spi: spi0 {
+	nice_view_spi: nice_view_spi {
 		compatible = "nordic,nrf-spim";
-		status = "okay";
+		status = "disabled";
 		mosi-pin = <0>; // Pro Micro Pin 0
 		sck-pin = <1>;  // Pro Micro Pin 1
 		miso-pin = <2>; // unused but required
-		cs-gpios = <&pro_micro 10 GPIO_ACTIVE_HIGH>; // Pro Micro Pin 10
 	};
 };
