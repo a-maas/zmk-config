@@ -100,6 +100,7 @@ RC(3,5) RC(3,4) RC(3,3) RC(3,2) RC(3,1) RC(3,0)                 RC(8,0) RC(8,1) 
 		compatible = "nordic,nrf-spim";
 		status = "okay";
 		reg = <0x40003000 0x1000>;
+		interrupt-parent = <&nvic>;
 		interrupts = <3 NRF_DEFAULT_IRQ_PRIORITY>;
 		cs-gpios = <&pro_micro 9 GPIO_ACTIVE_LOW>; // D10 (P0.09)
 		max-frequency = <8000000>; // 8MHz
