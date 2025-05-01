@@ -73,15 +73,20 @@ RC(3,5) RC(3,4) RC(3,3) RC(3,2) RC(3,1) RC(3,0)                 RC(8,0) RC(8,1) 
 		address = <0x3C>;
 		spi-dev = <&nice_view_spi>;
 		cs-gpios = <&pro_micro 9 GPIO_ACTIVE_LOW>;
+		dc-gpios = <&pro_micro 10 GPIO_ACTIVE_HIGH>;
+		reset-gpios = <&pro_micro 11 GPIO_ACTIVE_LOW>;
 	};
 
 	nice_view_spi: spi0 {
 		compatible = "nordic,nrf-spim";
 		status = "okay";
 		reg = <0x40003000 0x1000>;
+		interrupts = <3 NRF_DEFAULT_IRQ_PRIORITY>;
 		sck-pin = <6>;  // D1 (P0.06)
 		mosi-pin = <8>; // D0 (P0.08)
+		miso-pin = <7>; // Not used but required by binding
 		cs-gpios = <&pro_micro 9 GPIO_ACTIVE_LOW>; // D10 (P0.09)
+		frequency = <8000000>; // 8MHz
 		#address-cells = <1>;
 		#size-cells = <0>;
 	};
