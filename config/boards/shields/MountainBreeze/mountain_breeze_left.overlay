@@ -20,18 +20,3 @@
 &nice_view_spi {
     cs-gpios = <&pro_micro 10 GPIO_ACTIVE_HIGH>;
 };
-
-/ {
-    chosen {
-        zephyr,display = &nice_view;
-    };
-};
-
-&nice_view_spi {
-    nice_view: nice_view@0 {
-        compatible = "nicekeyboards,nice-view";
-        status = "okay";
-        reg = <0>;
-        spi-max-frequency = <4000000>;
-    };
-};
