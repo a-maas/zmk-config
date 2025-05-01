@@ -18,8 +18,8 @@ include:
   - board: nice_nano_v2
     shield: breeze_mx_right
   - board: nice_nano_v2
-    shield: mountain_breeze_left nice_view
+    shield: mountain_breeze_left
   - board: nice_nano_v2
-    shield: mountain_breeze_right nice_view
+    shield: mountain_breeze_right
   - board: nice_nano_v2
     shield: settings_reset
