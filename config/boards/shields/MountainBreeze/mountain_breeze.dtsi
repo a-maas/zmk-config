@@ -66,15 +66,4 @@ RC(3,5) RC(3,4) RC(3,3) RC(3,2) RC(3,1) RC(3,0)                 RC(8,0) RC(8,1) 
 			, <&pro_micro 9  GPIO_ACTIVE_HIGH>
 			;
 	};
-
-	// Define the nice_view_spi bus as a child of the root node
-	nice_view_spi: nice_view_spi {
-		compatible = "nordic,nrf-spim";
-		status = "disabled";
-		mosi-pin = <0>; // Pro Micro Pin 0
-		sck-pin = <1>;  // Pro Micro Pin 1
-		miso-pin = <2>; // unused but required
-		#address-cells = <1>;
-		#size-cells = <0>;
-	};
 };

@@ -17,8 +17,6 @@
 
 };
 
-// Enable the SPI that will be used for the nice view display
-&nice_view_spi {
-    status = "okay";
+&pro_micro_spi {
     cs-gpios = <&pro_micro 10 GPIO_ACTIVE_HIGH>;
 };
