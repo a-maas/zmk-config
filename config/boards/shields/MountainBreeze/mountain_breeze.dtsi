@@ -106,6 +106,7 @@ RC(3,5) RC(3,4) RC(3,3) RC(3,2) RC(3,1) RC(3,0)                 RC(8,0) RC(8,1) 
 		miso-pin = <7>; // Not used but required by binding
 		cs-gpios = <&pro_micro 9 GPIO_ACTIVE_LOW>; // D10 (P0.09)
 		max-frequency = <8000000>; // 8MHz
+		easydma-maxcnt-bits = <16>;
 		pinctrl-0 = <&spi0_default>;
 		pinctrl-1 = <&spi0_sleep>;
 		pinctrl-names = "default", "sleep";
