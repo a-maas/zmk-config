@@ -1,5 +1,8 @@
-config SHIELD_MOUNTAIN_BREEZE_LEFT
-	def_bool $(shields_list_contains,mountain_breeze_left)
+# Copyright (c) 2022 The ZMK Contributors
+# SPDX-License-Identifier: MIT
 
-config SHIELD_MOUNTAIN_BREEZE_RIGHT
-	def_bool $(shields_list_contains,mountain_breeze_right) 
+config SHIELD_BREEZE_REV1_LEFT
+    def_bool $(shields_list_contains,breeze_rev1_left)
+
+config SHIELD_BREEZE_REV1_RIGHT
+    def_bool $(shields_list_contains,breeze_rev1_right)
