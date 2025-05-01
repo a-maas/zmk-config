@@ -16,9 +16,6 @@ config ZMK_SPLIT
 # Enable display support
 config ZMK_DISPLAY
 	default y
-
-config ZMK_DISPLAY_STATUS_SCREEN_BUILT_IN
-	default y
  
 endif
 
