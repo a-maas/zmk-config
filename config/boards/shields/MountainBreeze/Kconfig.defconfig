@@ -1,4 +1,3 @@
-
 if SHIELD_MOUNTAIN_BREEZE_LEFT
 
 config ZMK_KEYBOARD_NAME
@@ -14,9 +13,12 @@ if SHIELD_MOUNTAIN_BREEZE_LEFT || SHIELD_MOUNTAIN_BREEZE_RIGHT
 config ZMK_SPLIT
 	default y
 
-# Commenting out display support as there is no display hardware defined
-# config ZMK_DISPLAY
-#	default y
+# Enable display support
+config ZMK_DISPLAY
+	default y
+
+config ZMK_DISPLAY_STATUS_SCREEN_BUILT_IN
+	default y
  
 endif
 
